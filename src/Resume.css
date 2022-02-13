@@ -1,0 +1,166 @@
+:root {
+  --resume-primary-bg: #23376c;
+  --resume-primary-fg: white;
+}
+.resume__header {
+  color: var(--resume-primary-fg);
+  background: var(--resume-primary-bg);
+  padding: 20px 40px;
+}
+.resume__header > h1 {
+  font-size: 50px;
+  margin-bottom: 0px;
+  font-weight: 300;
+}
+.resume__header > h2 {
+  margin-top: 0px;
+  font-weight: 300;
+}
+.resume {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  font-family: "Poppins", sans-serif;
+}
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printDiv,
+  #printDiv * {
+    visibility: visible;
+  }
+  #printDiv {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+@media (max-width: 1400px) {
+  .resumain {
+    grid-template-columns: 1fr !important;
+  }
+}
+.resume__headerLinks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 18px;
+}
+.resume__headerLinks > div {
+  margin-bottom: 5px;
+}
+.resume__headerLinks > div i {
+  margin-right: 20px;
+}
+.resume__headerLinks > div > a {
+  text-decoration: none;
+  color: white;
+  opacity: 0.9;
+  font-weight: 300;
+}
+.resume__headerLinks > div a:hover {
+  text-decoration: none;
+  box-shadow: none;
+  text-transform: none;
+}
+.resume__headerLinks > div:hover {
+  text-decoration: none;
+}
+
+.resume__body {
+  padding: 40px 90px;
+}
+.resume__body > h3 {
+  font-size: 36px;
+  font-weight: 100;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+
+  border-bottom: 4px dotted #0005;
+}
+.resume__skills {
+  max-width: 600px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+@media (max-width: 900px) {
+  .resume__body {
+    padding: 20px 40px;
+  }
+}
+@media (max-width: 720px) {
+  .resume__skills {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .resume__headerLinks {
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  .resume__skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .resumain {
+    padding: 0px !important;
+  }
+}
+@media (max-width: 400px) {
+  .resume__body {
+    padding: 20px !important;
+  }
+  .resume__header {
+    padding: 20px !important;
+  }
+  .resume__header > h1 {
+    font-size: 40px;
+  }
+  .resume__body > h3 {
+    font-size: 25px;
+  }
+}
+
+.resume__skills > span {
+  display: block;
+  background-color: var(--resume-primary-bg);
+  color: var(--resume-primary-fg);
+  padding: 5px 15px;
+  margin: 5px 20px;
+  margin-left: 0px;
+  border-radius: 10px;
+}
+
+.resume__education {
+  margin-top: 10px;
+}
+.resume__education > span {
+  font-size: 34px;
+  font-weight: bold;
+  font-family: serif;
+}
+.resume__h4 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 100;
+  color: black;
+}
+.resume__education > div > p {
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.5;
+  margin: 0;
+}
+
+.resume__project > p {
+  /* opacity: 0.5; */
+  margin: 0px;
+  font-weight: bold;
+}
+.resume__project > ul {
+  list-style: circle;
+  font-size: 16px;
+}
+.resume__achievements > ul {
+  list-style: circle;
+}
+.resume__certificates > ul {
+  list-style: circle;
+}

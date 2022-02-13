@@ -1,0 +1,29 @@
+.timelineElement {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin: 50px 0px;
+}
+.timeline__date {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: end;
+  padding-right: 5%;
+  border-right: 3px dotted #f00;
+  font-family: monospace;
+  opacity: 0.6;
+  font-size: 14px;
+}
+
+.timeline__content {
+  padding-left: 10%;
+}
+.timeline__name {
+  font-size: 30px;
+  margin-top: 0px;
+}
+.timeline__desc {
+  opacity: 0.6;
+  font-size: 20px;
+  font-family: "Heebo", sans-serif;
+}

@@ -1,0 +1,32 @@
+.certificate {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  margin: 10px 0px;
+}
+.certificate > div {
+  align-items: center;
+}
+.certificate > div > span {
+  margin-left: 38px;
+  opacity: 0.6;
+  font-size: 14px;
+}
+.certificate > div > i {
+  margin: 10px;
+}
+.certificate > div > a {
+}
+.certificate > span {
+  text-align: right;
+  font-weight: 100;
+}
+@media (max-width: 720px) {
+  .certificate {
+    display: block !important;
+  }
+  .certificate > span {
+    float: right;
+  }
+}
