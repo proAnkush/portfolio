@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./ProjectCard.css";
+import "../styles/ProjectCard.css";
 function ProjectCard({ name, link, desc, dataAos, image }) {
   useEffect(() => {
     let element = document.getElementById(name.split(" ")[0] + "wrap");

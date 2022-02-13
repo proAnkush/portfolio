@@ -1,5 +1,5 @@
 import React from "react";
-import "./TimelineElement.css";
+import "../styles/TimelineElement.css";
 function TimelineElement({ name, startDate, endDate, desc, dataAos }) {
   return (
     <div className="timelineElement" data-aos={dataAos}>

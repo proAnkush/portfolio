@@ -1,5 +1,5 @@
 import React from "react";
-import "./Certificate.css";
+import "../styles/Certificate.css";
 function Certificate({ name, issuer, dataAos, date, link }) {
   return (
     <div className="certificate" data-aos={dataAos}>

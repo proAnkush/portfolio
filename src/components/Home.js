@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import Certificate from "./Certificate";
-import "./Home.css";
-import amazonImage from "./static/amzncln.png";
-import cardCreatorImage from "./static/bsncrtr.png";
-import dictionaryImage from "./static/dictapp.png";
-import weatherImage from "./static/wthrapp.png";
+import "../styles/Home.css";
+import amazonImage from "../static/amzncln.png";
+import cardCreatorImage from "../static/bsncrtr.png";
+import dictionaryImage from "../static/dictapp.png";
+import weatherImage from "../static/wthrapp.png";
 import ProjectCard from "./ProjectCard";
 import SocialCard from "./SocialCard";
 function Home() {

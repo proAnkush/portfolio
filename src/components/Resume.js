@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { v4 } from "uuid";
-import "./Resume.css";
+import "../styles/Resume.css";
 function Resume() {
   const skills = [
     "ReactJS",

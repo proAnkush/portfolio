@@ -1,13 +1,13 @@
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Header from "./Header";
-import Home from "./Home";
-import Footer from "./Footer";
+import Header from "./components/Header";
+import Home from "./components/Home";
+import Footer from "./components/Footer";
+import About from "./components/About";
+import Resume from "./components/Resume";
 import "aos/dist/aos.css";
 import AOS from "aos";
 import { useEffect } from "react";
-import About from "./About";
-import Resume from "./Resume";
 function App() {
   useEffect(() => {
     AOS.init({

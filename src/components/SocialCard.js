@@ -1,5 +1,5 @@
 import React from "react";
-import "./SocialCard.css";
+import "../styles/SocialCard.css";
 function SocialCard() {
   return (
     <div className="home__socialCard" title="">
