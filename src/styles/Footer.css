@@ -14,6 +14,9 @@
   height: 10px;
   margin-top: 66px;
 }
+footer {
+  background-color: #f3f4f5;
+}
 .footer__text {
   padding: 16px;
   padding-left: 10%;
@@ -26,6 +29,8 @@
   font-size: 20px;
 }
 .footer__grid {
+  margin: auto;
+  width: 60%;
   background: #f3f4f5;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -57,10 +62,7 @@
 @media (max-width: 700px) {
   .footer__grid {
     display: block;
-    padding: 50px;
-  }
-  .footer__text > span {
-    font-size: 60px;
+    width: 100%;
   }
 }
 @media (max-width: 400px) {
@@ -83,9 +85,10 @@
   }
 }
 .footer__nav {
-  width: 100%;
+  width: 60%;
   background-color: #f3f4f5;
   margin: 0px;
+  margin: auto;
 }
 .footer__nav > .header__navList {
   margin: 0px;

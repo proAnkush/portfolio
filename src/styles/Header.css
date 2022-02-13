@@ -25,6 +25,7 @@
     display: block !important;
     margin-top: 0px !important;
     padding-top: 10px;
+    width: 100% !important;
   }
   .header__navList {
     padding: 0;

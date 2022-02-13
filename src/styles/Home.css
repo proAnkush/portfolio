@@ -29,7 +29,7 @@
 }
 @media (max-width: 720px) {
   .main {
-    grid-template-columns: 0fr 5fr 0fr;
+    grid-template-columns: 0fr 1fr 0fr !important;
     padding: 0px 50px;
   }
   .content {
