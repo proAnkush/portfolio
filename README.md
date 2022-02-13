@@ -16,21 +16,19 @@ A portfolio website created for and by <em> Ankush Patil</em>.
 This project is bootstrapped from create-react-app and follow similar workflow for replicating it.<br>
 First clone the repository:
 
-```
+```properties
 git clone git@github.com:proankush/portfolio
 cd portfolio
 ```
 
 And then to start the project in development mode on localhost 3000.
 
-```
+```properties
 npm start
 ```
 
 Or to deploy the project use
 
-```
+```properties
 npm run build && firebase deploy
 ```
-
-Yes this project is deployed to Firebase.
