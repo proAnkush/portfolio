@@ -22,8 +22,29 @@
   font-size: 30px;
   margin-top: 0px;
 }
+.timeline__profile {
+  font-size: 14px;
+  text-align: right;
+  margin: 0px;
+  color: white;
+  background-color: rebeccapurple;
+  padding: 6px;
+  width: fit-content;
+  margin-right: 0px;
+  margin-left: auto;
+}
 .timeline__desc {
   opacity: 0.6;
   font-size: 20px;
   font-family: "Heebo", sans-serif;
+  margin-top: 10px;
+}
+
+.timeline__bulletsList {
+  list-style-type: circle;
+}
+.timeline__bulletsList > li {
+  margin-bottom: 10px;
+  opacity: 0.8;
+  font-size: 14px;
 }

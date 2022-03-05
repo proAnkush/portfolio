@@ -17,7 +17,19 @@ function App() {
       delay: 100,
     });
   }, []);
-
+  const pageSwitch = (e) => {
+    let elements = document.getElementsByClassName("navLink");
+    const targetId = e.target.id.split("_")[0];
+    for (let index = 0; index < elements.length; index++) {
+      const element = elements[index];
+      element.classList = "navLink";
+      if (element.id.split("_")[0] === targetId) {
+        element.classList = "selected navLink";
+      }
+    }
+    e.target.classList = "selected navLink";
+    document.getElementById("home_LinkFooter");
+  };
   return (
     <Router>
       <div desc="grid-side-columns" id="left__wavecontainer">
@@ -34,7 +46,7 @@ function App() {
           ></path>
         </svg>
       </div>
-      <Header />
+      <Header pageSwitch={pageSwitch} />
       <Switch>
         <Route exact path="/about">
           <main>
@@ -52,7 +64,7 @@ function App() {
           </main>
         </Route>
       </Switch>
-      <Footer />
+      <Footer pageSwitch={pageSwitch} />
     </Router>
   );
 }

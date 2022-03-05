@@ -3,20 +3,6 @@ import { Link } from "react-router-dom";
 import { withRouter } from "react-router-dom/cjs/react-router-dom.min";
 import "../styles/Header.css";
 function Header(props) {
-  const navClick = (e) => {
-    let elements = document.getElementsByClassName("navLink");
-    const targetId = e.target.id.split("_")[0];
-    for (let index = 0; index < elements.length; index++) {
-      const element = elements[index];
-      element.classList = "navLink";
-      if (element.id.split("_")[0] === targetId) {
-        element.classList = "selected navLink";
-      }
-    }
-    e.target.classList = "selected navLink";
-    document.getElementById("home_LinkFooter");
-  };
-
   useEffect(() => {
     let elements = document.getElementsByClassName("navLink");
     for (let index = 0; index < elements.length; index++) {
@@ -58,7 +44,7 @@ function Header(props) {
               to="/"
               id="home_LinkHeader"
               className="navLink"
-              onClick={navClick}
+              onClick={props.pageSwitch}
             >
               Home
             </Link>
@@ -69,7 +55,7 @@ function Header(props) {
               to="/about"
               id="about_LinkHeader"
               className="navLink"
-              onClick={navClick}
+              onClick={props.pageSwitch}
             >
               About
             </Link>
@@ -81,7 +67,7 @@ function Header(props) {
               to="/resume"
               id="resume_LinkHeader"
               className="navLink"
-              onClick={navClick}
+              onClick={props.pageSwitch}
             >
               Resume
             </Link>

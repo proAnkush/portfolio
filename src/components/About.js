@@ -52,6 +52,31 @@ function About() {
           <div>
             <SocialCard />
           </div>
+          <div className="subgrid__column">
+            <h2 className="secondHeading">Work Experience</h2>
+            <div
+              className="secondContent"
+              style={{ borderTop: "4px dotter #0009", padding: "20px" }}
+            >
+              <TimelineElement
+                name="Krishi Network"
+                profile="Full Stack SDE Intern"
+                startDate="February, 2021"
+                endDate="Present"
+                desc="Getting to work on the much loved react framework. Along with similary popular Flask."
+                dataAos={"fade-up"}
+                bullets={true}
+                bulletPoints={[
+                  "Tech Stack: ReactJS, Flask, PostgresSQL",
+                  "Delivered prod ready, design implemented, robust webpages from first week onwards.",
+                  "Worked with like minded tech enthusiasts, who were passionate about their profession.",
+                  "Doubled my love towards react.",
+                ]}
+              />
+            </div>
+          </div>
+          <div></div>
+          <div></div>
 
           <div className="subgrid__column">
             <h2 className="secondHeading">Education</h2>
@@ -61,6 +86,7 @@ function About() {
             >
               <TimelineElement
                 name="SAGE University"
+                profile="Bachelor's, Computer Science"
                 startDate="November, 2021"
                 endDate="August, 2024"
                 desc="Pursuing Bachelor's in Computer Science. Constantly improving my web development skills, thriving in gathering certificates for extra skills that would fulfill my web development itch. Learning depth first rather than breadth first which I did during my diploma."
@@ -69,6 +95,7 @@ function About() {
               <hr className="timeline__divider" data-aos="fade-up" />
               <TimelineElement
                 name="RGPV University"
+                profile="Diploma, Computer Science"
                 startDate="November, 2018"
                 endDate="August, 2021"
                 desc="Completed High School Equivalent Diploma in Computer Science and Engineering. Increased my love towards programming, made me interested in learning about every field in computers such as AI/ML, Android, Web Development, Graphics Designing etc. Ended up securing 8.4 CGPA."
@@ -78,6 +105,7 @@ function About() {
 
               <TimelineElement
                 name={"National Institute of Open Schooling"}
+                profile="High School"
                 startDate={"August, 2019"}
                 endDate={"April, 2020"}
                 desc="Completed part time high school (12th Grade) alongside my Diploma."
@@ -87,6 +115,7 @@ function About() {
 
               <TimelineElement
                 name={"Nehru Montessori Senior Secondary School"}
+                profile="Student"
                 startDate={"April, 2017"}
                 endDate={"March, 2018"}
                 desc="Completed 10th Grade securing 7.4/10 CGPA. "

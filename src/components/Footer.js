@@ -3,20 +3,6 @@ import { Link } from "react-router-dom";
 import { withRouter } from "react-router-dom/cjs/react-router-dom.min";
 import "../styles/Footer.css";
 function Footer(props) {
-  const navClick = (e) => {
-    let elements = document.getElementsByClassName("navLink");
-    const targetId = e.target.id.split("_")[0];
-    for (let index = 0; index < elements.length; index++) {
-      const element = elements[index];
-      element.classList = "navLink";
-      if (element.id.split("_")[0] === targetId) {
-        element.classList = "selected navLink";
-      }
-    }
-    e.target.classList = "selected navLink";
-    document.getElementById("home_LinkFooter");
-  };
-
   useEffect(() => {
     let elements = document.getElementsByClassName("navLink");
     for (let index = 0; index < elements.length; index++) {
@@ -43,7 +29,7 @@ function Footer(props) {
               to="/"
               id="home_LinkFooter"
               className="navLink"
-              onClick={navClick}
+              onClick={props.pageSwitch}
             >
               Home
             </Link>
@@ -54,7 +40,7 @@ function Footer(props) {
               to="/about"
               className="navLink"
               id="about_LinkFooter"
-              onClick={navClick}
+              onClick={props.pageSwitch}
             >
               About
             </Link>
@@ -66,7 +52,7 @@ function Footer(props) {
               to="/resume"
               className="navLink"
               id="resume_LinkFooter"
-              onClick={navClick}
+              onClick={props.pageSwitch}
             >
               Resume
             </Link>
