@@ -14,10 +14,10 @@ function About() {
           <h1 className="hero__heading">About Me</h1>
           <div className="hero__summary">
             <p>
-              I am an able full stack developer (NodeJS), with some devops tools
-              in my skillset, focused more towards front-end develpoment with
-              React. I am currently taking out some time, to learn and discover
-              more, for my newfound love towards AWS/Devops in general.{" "}
+              I am an able full stack developer (JavaScript), with some devops
+              tools in my skillset, focused more towards back-end develpoment
+              with NodeJS. I am currently taking out some time, to learn and
+              discover more, for my newfound love towards AWS/Devops in general.{" "}
             </p>
             <p>
               Previously being focused more towards competitive programming
@@ -70,7 +70,7 @@ function About() {
                   "Tech Stack: ReactJS, Flask, PostgresSQL",
                   "Delivered prod ready, design implemented, robust webpages from first week onwards.",
                   "Worked with like minded tech enthusiasts, who were passionate about their profession.",
-                  "Doubled my love towards react.",
+                  "Increased curiosity and enthusiasm for backend development.",
                 ]}
               />
             </div>
@@ -89,7 +89,7 @@ function About() {
                 profile="Bachelor's, Computer Science"
                 startDate="November, 2021"
                 endDate="August, 2024"
-                desc="Pursuing Bachelor's in Computer Science. Constantly improving my web development skills, thriving in gathering certificates for extra skills that would fulfill my web development itch. Learning depth first rather than breadth first which I did during my diploma."
+                desc="Pursuing Bachelor's in Computer Science. Constantly improving my web development skills, thriving in gathering certificates for extra skills that would fulfill my web development itch. Learning depth first rather than breadth first which I did during my diploma. 8.27"
                 dataAos={"fade-up"}
               />
               <hr className="timeline__divider" data-aos="fade-up" />

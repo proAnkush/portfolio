@@ -1,10 +1,12 @@
 import React, { useEffect } from "react";
 import Certificate from "./Certificate";
 import "../styles/Home.css";
+import nodeBitcaskImage from "../static/ndbsk.png";
 import amazonImage from "../static/amzncln.png";
 import cardCreatorImage from "../static/bsncrtr.png";
 import dictionaryImage from "../static/dictapp.png";
 import weatherImage from "../static/wthrapp.png";
+import githubImage from "../static/github.png";
 import ProjectCard from "./ProjectCard";
 import SocialCard from "./SocialCard";
 function Home() {
@@ -51,7 +53,7 @@ function Home() {
               onClick={hinge}
               className="home__summary--strong"
             >
-              web developer
+              Full stack developer
             </span>
             , who enjoys making{" "}
             <span
@@ -85,8 +87,36 @@ function Home() {
           <div>
             <SocialCard />
           </div>
+
           <div className="subgrid__column">
-            <h1 className="secondHeading">Favourite Projects</h1>
+            <h1 className="secondHeading">Backend Projects</h1>
+            <div className="projects">
+              {/* second__content but 2*2 grid */}
+              <ProjectCard
+                dataAos="zoom-in-up"
+                name={"node-bitcask"}
+                link="https://www.npmjs.com/package/node-bitcask"
+                desc="A reliable Log structure hash table datastore based on Bitcask Paper by Riak KV. Bitcask is useful write heavy database for storing large data, which is accessed less frequently but need to be done so fast. One of its limitation is the number of keys should fit in memory (related data is stored on disk)."
+                image={nodeBitcaskImage}
+              />
+              <ProjectCard
+                dataAos="zoom-in-up"
+                name={"Auth Gator"}
+                link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                desc="!CURRENTLY UNDER HEAVY DEVELOPMENT! A highly customizable, decoupled, user friendly auth microservice, with email, phone verification. MFA will also be a choice to user. Uses NodeJS, express, mongodb, redis, apache kafka, twilio."
+                image={githubImage}
+              />
+              <div></div>
+              <div className="moreDiv">
+                <a
+                  href="https://www.github.com/proankush"
+                  className="projects__moreLink"
+                >
+                  more personal projects <i className="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <h1 className="secondHeading">Frontend Projects Gallery</h1>
             <div className="projects">
               {/* second__content but 2*2 grid */}
               <ProjectCard

@@ -2,7 +2,10 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { withRouter } from "react-router-dom/cjs/react-router-dom.min";
 import "../styles/Footer.css";
+import puns from "puns.dev";
+import { useState } from "react";
 function Footer(props) {
+  const [pun, setPun] = useState(puns.random());
   useEffect(() => {
     let elements = document.getElementsByClassName("navLink");
     for (let index = 0; index < elements.length; index++) {
@@ -62,11 +65,8 @@ function Footer(props) {
       <div className="footer__grid">
         <div className="footer__text">
           <span>Ankush Patil</span>
-          <blockquote>
-            “ If you're good at the debugger it means you spent a lot of time
-            debugging. I don't want you to be good at the debugger.”
-          </blockquote>
-          <div style={{ textAlign: "center" }}>- Robert C. Martin</div>
+          <blockquote>“{pun.pun + "  \n  " + pun.punchline}”</blockquote>
+          <div style={{ textAlign: "center" }}>- Developer Puns</div>
         </div>
         <div className="footer__links">
           <a
